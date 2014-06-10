@@ -1,0 +1,5 @@
+'.platform-darwin .workspace':
+  'cmd-l': 'test-status:toggle-output'
+
+'.platform-win32 .workspace':
+  'ctrl-l': 'test-status:toggle-output'

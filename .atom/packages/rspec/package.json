@@ -1,0 +1,33 @@
+{
+  "name": "rspec",
+  "main": "./lib/rspec",
+  "version": "0.1.5",
+  "private": true,
+  "description": "Atom RSpec runner package",
+  "activationEvents": [
+    "rspec:run",
+    "rspec:run-for-line",
+    "rspec:run-last"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fcoury/atom-rspec"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# Atom RSpec Runner Package\n\nAdd ability to run RSpec and see the output without leaving Atom.\n\nHotKeys:\n\n- __Ctrl+Alt+T__ - executes all specs the current file\n- __Ctrl+Alt+X__ - executes only the spec on the line the cursor's at\n- __Ctrl+Alt+E__ - re-executes the last executed spec\n\n![Screenshot](http://cl.ly/image/2G2B3M2g3l3k/stats_collector_spec.rb%20-%20-Users-fcoury-Projects-crm_bliss.png)\n\n## Configuration\n\nBy default this package will run `rspec` as the command.\n\nYou can set the default command by either accessing the Settings page (Cmd+,)\nand changing the command option like below:\n\n![Configuration Screenshot](http://f.cl.ly/items/2k1C0E0e1l2Z3m1l3e1R/Settings%20-%20-Users-fcoury-Projects-crm_bliss.jpg)\n\nOr by opening your configuration file (clicking __Atom__ > __Open Your Config__)\nand adding or changing the following snippet:\n\n    'rspec':\n      'command': 'bundle exec rspec'\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/fcoury/atom-rspec/issues"
+  },
+  "homepage": "https://github.com/fcoury/atom-rspec",
+  "_id": "rspec@0.1.5",
+  "dist": {
+    "shasum": "232df0466e38582f754f2a531bffdbfe5f9fb8be"
+  },
+  "_resolved": "/var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/T/d-114210-23245-1nwr0d9/package.tgz",
+  "_from": "/var/folders/m1/d5g11gg94rdgw9qffpl2fbmm0000gn/T/d-114210-23245-1nwr0d9/package.tgz"
+}

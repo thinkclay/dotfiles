@@ -1,0 +1,25 @@
+# Traversing
+alias ..='cd ..'
+alias ll='ls -la --color'
+alias h='dirs -v'
+alias hf_off='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias hf_on='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+
+# System
+alias hosts='sudo vi /etc/hosts'
+alias ports='lsof -i | grep LISTEN'
+alias vhosts='sudo vi /etc/apache2/extra/httpd-vhosts.conf'
+
+# Services
+alias a2r='sudo apachectl restart'
+alias mongod_start='sudo mongod --fork --logpath /var/log/mongodb.log --profile 1'
+
+# Rails
+alias hamlize="find . -name \*.erb -print | sed 'p;s/.erb$/.haml/' | xargs -n2 html2haml"
+alias spec='rake RAILS_ENV=test spec'
+
+# Go
+alias godeps="go list -f '{{join .Deps \"\n\"}}' |  xargs go list -f '{{.ImportPath}}'"
+
+# Git
+alias gitsubs='git submodule update --init --recursive'
