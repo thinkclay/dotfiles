@@ -1,6 +1,6 @@
 # Traversing
 alias ..='cd ..'
-alias ll='ls -la --color'
+alias ll='ls -laG'
 alias h='dirs -v'
 alias hf_off='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias hf_on='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
