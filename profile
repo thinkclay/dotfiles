@@ -15,4 +15,4 @@ shopt -s histappend
 # Append commands to the history file every time a prompty is shown instead of after closing a session
 PROMPT_COMMAND='history -a'
 
-export PS1='\$ '
+export PS1="\[\033[33m\]\n\W $ "

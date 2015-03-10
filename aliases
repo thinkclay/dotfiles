@@ -13,6 +13,7 @@ alias vhosts='sudo vi /etc/apache2/extra/httpd-vhosts.conf'
 # Services
 alias a2r='sudo apachectl restart'
 alias mongod_start='sudo mongod --fork --logpath /var/log/mongodb.log --profile 1'
+alias mysqld_start='mysql.server start'
 
 # Rails
 alias hamlize="find . -name \*.erb -print | sed 'p;s/.erb$/.haml/' | xargs -n2 html2haml"
@@ -23,3 +24,6 @@ alias godeps="go list -f '{{join .Deps \"\n\"}}' |  xargs go list -f '{{.ImportP
 
 # Git
 alias gitsubs='git submodule update --init --recursive'
+
+# Xcode
+alias flush_derived_data='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
