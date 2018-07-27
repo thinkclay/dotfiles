@@ -3,6 +3,13 @@ if [ -f ~/.bash/aliases ]; then
   source ~/.bash/aliases
 fi
 
+#
+# Change completions
+#
+
+# Only show directories when [TAB][TAB] on cd 
+complete -d cd
+
 # Set the default editor to vim (could also be emacs, sublime, etc)
 export EDITOR=vim
 
