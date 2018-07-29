@@ -43,7 +43,7 @@ PROMPT_COMMAND='history -a'
 alias grr='git push -d origin'
 alias gclean="git fetch --prune && git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs git branch -d"
 source ~/.bash/git-completion.bash
-source ~/.bash/git-aware-prompt/main.sh
+source ~/.bash/git-aware/main.sh
 
 # Hub CLI
 eval "$(hub alias -s)"
