@@ -1,0 +1,114 @@
+"*":
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
+  "atom-material-ui":
+    colors:
+      abaseColor: "#4f438d"
+      accentColor: "#528c94"
+      paintCursor: true
+      predefinedColor: "Cyan"
+    fonts:
+      fontSize: 11
+    tabs:
+      compactTabs: true
+      noTabMinWidth: true
+      tintedTabBar: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  "atom-package-deps":
+    ignored: []
+  core:
+    closeDeletedFileTabs: true
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "background-tips"
+      "intentions"
+      "linter-rubocop"
+      "busy-signal"
+      "go-debug"
+      "language-javascript"
+      "hyperclick"
+      "linter"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "node_modules"
+    ]
+    projectHome: "/Users/clay/Projects"
+    telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "unicorn-syntax"
+    ]
+    titleBar: "custom"
+    warnOnLargeFileLimit: 1
+  editor:
+    fontFamily: "hasklig"
+    fontSize: 10
+    lineHeight: 1.8
+    preferredLineLength: 140
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "53ca63c3-46d7-55d4-ec95-7da288b28b0c"
+  "go-plus":
+    panel:
+      currentHeight: "36.21867881548975vh"
+      currentWidth: "22.708333333333332vw"
+  linter: {}
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
+    fixOnSave: true
+    ignoreFixableRulesWhileTyping: true
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
+  "linter-ui-default": {}
+  "linter-write-good":
+    severityLevel: "Warning"
+  nuclide:
+    "nuclide-code-format":
+      formatOnSave: true
+    "nuclide-diagnostics-ui":
+      showDiagnosticTraces: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+".coffee.jsx.source":
+  editor:
+    preferredLineLength: 120
+".js.jsx.source":
+  editor:
+    preferredLineLength: 120
+".source.ts":
+  editor:
+    tabType: "soft"
+".source.tsx":
+  editor:
+    tabType: "soft"
+

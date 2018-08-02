@@ -1,0 +1,40 @@
+'.source.js':
+  'Eslint Disable Line':
+      'prefix': '///',
+      'body': """
+        // eslint-disable-line
+      """
+  'React Component':
+    'prefix': 'es6rc'
+    'body': """
+      import React from 'react'
+
+      class $1 extends React.Component {
+
+        constructor() {
+          super()
+        }
+
+        render() {
+          return (
+            $2
+          )
+        }
+
+      }
+
+      export default $1
+      """
+  'Stateless React Component':
+    'prefix': 'es6sc',
+    'body': """
+      import React from 'react'
+
+      const $1 = () => {
+        return (
+          $2
+        )
+      }
+
+      export default $1
+    """

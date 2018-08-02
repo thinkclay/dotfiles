@@ -1,0 +1,5 @@
+'.platform-darwin atom-text-editor':
+  'cmd-m': 'find-and-replace:select-next'
+
+'atom-text-editor:not(.mini)':
+  'cmd-d': 'editor:delete-line'
