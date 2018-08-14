@@ -67,6 +67,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 alias hamlize="find . -name \*.erb -print | sed 'p;s/.erb$/.haml/' | xargs -n2 html2haml"
 alias spec='rake RAILS_ENV=test spec'
 alias rails_refresh='rm -rf db/schema.rb; rake db:drop; rake db:setup; rake db:migrate; rake db:seed;'
+export PATH=$PATH:~/.rbenv/shims
+
 
 #########
 # XCODE #
