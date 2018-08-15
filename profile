@@ -54,11 +54,21 @@ export PS1="\[\033[33m\]\n\W \[$txtcyn\]\$git_branch\[$txtred\] \$git_dirty\[$tx
 # Integration for bash and iTerm
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+########
+# RUBY #
+########
+
+# Init rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 #########
 # RAILS #
 #########
 alias hamlize="find . -name \*.erb -print | sed 'p;s/.erb$/.haml/' | xargs -n2 html2haml"
 alias spec='rake RAILS_ENV=test spec'
+alias rails_refresh='rm -rf db/schema.rb; rake db:drop; rake db:setup; rake db:migrate; rake db:seed;'
+export PATH=$PATH:~/.rbenv/shims
+
 
 ######
 # GO #
