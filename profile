@@ -60,8 +60,17 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 alias hamlize="find . -name \*.erb -print | sed 'p;s/.erb$/.haml/' | xargs -n2 html2haml"
 alias spec='rake RAILS_ENV=test spec'
 
+######
+# GO #
+######
+export GOPATH=$HOME/Development/go/packages
+PATH=$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin
+
 #########
 # XCODE #
 #########
 
 alias flush_derived_data='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
+
+
+export PATH
